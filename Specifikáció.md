@@ -20,7 +20,7 @@ Alapvetően egy felelet választós történet alapú kalandjáték ahol a felha
 
 ## Megvalósítás
 
-Java konzolos alkalmazás. Minden kaland egy külön fájlban letárolható és végig játszható. Bejelentkezést külső adatbázisban lesz letárolva. A játékon belül menüből lehet kiválasztani, hogy melyik kampányt szeretnénk végig játszani. Lehet karaktert készíteni, minden karakternek saját STAT blokkja van, amit a játék elején kioszthatunk. Minden játékos alap felszereléssel kezd és ahogy a kaland halad úgy fejlődik. Szörnyek és challangek legyőzése után tapasztalati ponttal lesz gazdagabb a játékos. A játék akkor ér véget, hogy ha a felhasználó karaktere teljesiti a kalandot, vagy a felhasználó karakterének élet ereje elér a nullát.
+Java konzolos alkalmazás. Minden kaland egy külön fájlban letárolható és végig játszható. Bejelentkezést külső adatbázisban lesz letárolva. A játékon belül menüből lehet kiválasztani, hogy melyik kampányt szeretnénk végig játszani. Lehet karaktert készíteni, minden karakternek saját STAT blokkja van, amit a játék elején kioszthatunk. Minden játékos alap felszereléssel kezd és ahogy a kaland halad úgy fejlődik. Szörnyek és challangek legyőzése után tapasztalati ponttal lesz gazdagabb a játékos. A játék akkor ér véget, hogy ha a felhasználó karaktere teljesiti a kalandot, vagy a felhasználó karakterének élet ereje elér a nullát. 
 
 Regisztráció után minden új karakterről készülne egy bejegyzés az adatbázisba. Ez tartalmazna, a felhasználó nevet, a karakter nevet és a karakter aktuális fegyverét ,életerő értékét, speciális értékeit, és hogy hány élettöltő itallal rendelkezik. 
 
@@ -28,11 +28,15 @@ Ugyan erre a tematikára épülne fel a szörnyek karaktertáblája is.
 
 ## Tervezési Minták
 
-Template: A karakter alkotás minden egyes esetben ugyan azon a folyamaton megy keresztül, de különböző módon oszthatjuk ki az értékeket.
+Factory: A karakter alkotás minden egyes esetben ugyan azon a folyamaton megy keresztül, de különböző módon oszthatjuk ki az értékeket.
 
 Decoration: Különböző fajok , különböző kasztok, egyéni tulajdonságokkal ruházzák fel a karaktre pl. Egy elf, varázsló például Ügyességhez kap +2 pontot mivel Elf  és +2 pontot az intelligenciájához mivel varázsló. 
 
+Singleton: Adatbázis kapcsolatból lekérni a karaktert. Csak a saját karakterünkhöz férhessünk hozzá. 
 
+Observer: Karakter osztályok leképezése, és fajok leképezése. 
+
+Adapter: Szörny osztály, új típusú szörnyek később felvehetőek a játékba. Más tulajdonságokkal. 
 
 
 
