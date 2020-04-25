@@ -25,3 +25,16 @@ Java konzolos alkalmazás. Minden kaland egy külön fájlban letárolható és 
 Regisztráció után minden új karakterről készülne egy bejegyzés az adatbázisba. Ez tartalmazna, a felhasználó nevet, a karakter nevet és a karakter aktuális fegyverét ,életerő értékét, speciális értékeit, és hogy hány élettöltő itallal rendelkezik. 
 
 Ugyan erre a tematikára épülne fel a szörnyek karaktertáblája is. 
+
+## Tervezési Minták
+
+Template: A karakter alkotás minden egyes esetben ugyan azon a folyamaton megy keresztül, de különböző módon oszthatjuk ki az értékeket.
+
+Decoration: Különböző fajok , különböző kasztok, egyéni tulajdonságokkal ruházzák fel a karaktre pl. Egy elf, varázsló például Ügyességhez kap +2 pontot mivel Elf  és +2 pontot az intelligenciájához mivel varázsló. 
+
+
+
+
+
+## Unti Tesztek
+
