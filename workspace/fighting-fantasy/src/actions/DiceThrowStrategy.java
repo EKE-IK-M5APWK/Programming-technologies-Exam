@@ -1,5 +1,5 @@
 package actions;
 
-public class DiceThrowStrategy {
-
+public abstract class DiceThrowStrategy {
+	public abstract int DiceThrow();
 }
