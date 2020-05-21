@@ -43,38 +43,37 @@ public class Character implements ICharacter {
 
 	@Override
 	public int getDexterity() {
-		// TODO Auto-generated method stub
-		return 0;
+		return dexterity;
 	}
 
 	@Override
 	public int getStamina() {
-		// TODO Auto-generated method stub
-		return 0;
+		return stamina;
 	}
 
 	@Override
 	public int getLuck() {
-		// TODO Auto-generated method stub
-		return 0;
+		return luck;
 	}
 
 	@Override
 	public int getGold() {
-		// TODO Auto-generated method stub
-		return 0;
+		return gold;
 	}
 
 	@Override
 	public int getHealthPotion() {
-		// TODO Auto-generated method stub
-		return 0;
+		return potions;
 	}
 
 	@Override
 	public void showValue() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("-- STATS --");
+		System.out.println("DEXTERITY:"+getDexterity());
+		System.out.println("STAMINA:"+getStamina());
+		System.out.println("LUCK:"+getLuck());
+		System.out.println("GOLD:"+getGold());
+		System.out.println("POTIONS:"+getHealthPotion());
 	}
 	
 }

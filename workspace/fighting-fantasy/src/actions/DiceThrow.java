@@ -1,11 +1,9 @@
 package actions;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Dice {
+public class DiceThrow{
 
-	public class D6 extends DiceThrowStrategy{
-		public int DiceThrow() {
+	public static int diceThrow() {
 			return ThreadLocalRandom.current().nextInt(1, 7);	
-				}
-		}
+	}
 }
