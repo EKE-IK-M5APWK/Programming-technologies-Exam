@@ -3,7 +3,7 @@ package characther;
 public class Character implements ICharacter {
 	
 	private String characterName;
-	private CharacterStrategy characterStrategy;
+	private HeroStrategy heroStrategy;
 	
 	private int dexterity;
 	private int stamina;
@@ -11,8 +11,8 @@ public class Character implements ICharacter {
 	private int gold;
 	private int potions;
 	
-	public Character(CharacterStrategy characterStrategy) {
-		this.characterStrategy = characterStrategy;
+	public Character(HeroStrategy heroStrategy) {
+		this.heroStrategy = heroStrategy;
 		setDexterity();
 		setStamina();
 		setLuck();
@@ -23,19 +23,19 @@ public class Character implements ICharacter {
 		this.characterName = characterName;
 	}
 	public void setDexterity(){
-		this.dexterity = characterStrategy.setDexterity();
+		this.dexterity = heroStrategy.setDexterity();
 	}
 	public void setStamina(){
-		this.stamina = characterStrategy.setStamina();
+		this.stamina = heroStrategy.setStamina();
 	}
 	public void setLuck(){
-		this.luck = characterStrategy.setLuck();
+		this.luck = heroStrategy.setLuck();
 	}
 	public void setGold(){
-		this.gold = characterStrategy.setGold();
+		this.gold = heroStrategy.setGold();
 	}
 	public void setPotions(){
-		this.potions = characterStrategy.setHealthPotions();
+		this.potions = heroStrategy.setHealthPotions();
 	}
 	public String getName(){
 		return characterName;

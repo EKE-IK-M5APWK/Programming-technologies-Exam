@@ -1,6 +1,6 @@
 package characther;
 
-public abstract class CharacterStrategy {
+public abstract class HeroStrategy {
 	public abstract int setDexterity();
 	public abstract int setStamina();
 	public abstract int setLuck();
