@@ -1,0 +1,32 @@
+package details;
+
+public enum GraphicCardManufacture {
+	Asus,
+	AMD,
+	Biostar,
+	Chaintech,
+	Club3D,
+	Colorful,
+	DiamondMultimedia,
+	ECS,
+	ELSATechnology,
+	EVGACorporation,
+	Foxconn,
+	Gainward,
+	GigabyteTechnology,
+	HIS,
+	HerculesComputerTechnologyInc,
+	Leadtek,
+	Matrox,
+	Nvidia,
+	MSI,
+	Palit,
+	PNY,
+	PointofView,
+	PowerColor,
+	S3Graphics,
+	SapphireTechnology,
+	SPARKLE,
+	XFX,
+	Zotac
+}
